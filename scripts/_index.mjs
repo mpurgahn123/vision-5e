@@ -205,15 +205,15 @@ Hooks.once("init", () => {
         CONFIG.Canvas.visionModes.devilsSight.updateSource({
             canvas: {
                 shader: ColorAdjustmentsSamplerShader,
-                uniforms: { contrast: -0.15, saturation: 0, exposure: 0 },
+                uniforms: { contrast: 0, saturation: 0, exposure: 0 },
             },
             lighting: {
                 background: { visibility: VisionMode.LIGHTING_VISIBILITY.REQUIRED },
             },
             vision: {
                 darkness: { adaptive: false },
-                defaults: { contrast: -0.15, saturation: 0, brightness: 0.5 },
-            },
+                defaults: { contrast: 0, saturation: 0, brightness: 0.5 },
+            }
         });
     }
 });
