@@ -8,7 +8,7 @@ export default class VisionModeDevilsSight extends VisionMode {
             label: "VISION5E.DevilsSight",
             vision: {
                 darkness: { adaptive: false },
-                defaults: { contrast: 0, saturation: 0, brightness: 0 },
+                defaults: { contrast: 0, saturation: 0, brightness: 1 },
             },
         });
     }
